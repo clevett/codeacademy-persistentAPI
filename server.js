@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(morgan('dev'))
 
-apiRouter.use('/api', apiRouter)
+app.use('/api', apiRouter)
 
 app.use(errorhandler())
 
